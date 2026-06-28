@@ -25,13 +25,13 @@
 
 ## 2 · The Opportunity
 
-Healthcare organizations run on rules. Eligibility, provider-data quality, billing accuracy, network participation, state-by-state Medicaid and CMS compliance — all of it is encoded as logic. A single client's rule library can exceed **110,000 rules**, and every one of them touches whether a patient gets access, whether a claim is correct, whether an audit passes.
+Healthcare organizations run on rules. Eligibility, provider-data quality, billing accuracy, network participation, state-by-state Medicaid and CMS compliance, all of it is encoded as logic. A single client's rule library can exceed **110,000 rules**, and every one of them touches whether a patient gets access, whether a claim is correct, whether an audit passes.
 
 The problem was never the rules. It was who could change them.
 
-Authoring a rule required engineering syntax, so the people who understood the rules — business analysts with deep domain knowledge — couldn't touch them. Every change, even a trivial one, routed through a specialized Business Rules Unit. That dependency had a price the business could measure: rolling a new healthcare market live took nearly **three weeks**, support queues filled with simple change requests, and at full scale the manual model ran to roughly **$58 million a year** and **50,000 analyst-days** of effort.
+Authoring a rule required engineering syntax, so the people who understood the rules, business analysts with deep domain knowledge, couldn't touch them. Every change, even a trivial one, routed through a specialized Business Rules Unit. That dependency had a price the business could measure: rolling a new healthcare market live took nearly **three weeks**, support queues filled with simple change requests, and at full scale the manual model ran to roughly **$58 million a year** and **50,000 analyst-days** of effort.
 
-This wasn't a request for a nicer internal tool. It was an operational liability. The goal was to let operations teams configure rules independently — cutting the engineering dependency while *improving* governance, scalability, and the confidence clients had in the system.
+This wasn't a request for a nicer internal tool. It was an operational liability. The goal was to let operations teams configure rules independently, cutting the engineering dependency while *improving* governance, scalability, and the confidence clients had in the system.
 
 ---
 
@@ -45,7 +45,7 @@ I pushed in a different direction. Instead of *"What more can we build?"* I kept
 
 The answer reframed the whole project. Analysts weren't reaching for Excel because it was powerful. They reached for it because it was **theirs** — familiar, fast, and forgiving. They didn't want more functionality than the rule engine could already offer. They wanted **confidence**. They wanted to make a change and trust the result without filing a ticket and waiting.
 
-So the bar wasn't "more powerful than Excel." It was **easier than Excel**. That became the design principle the rest of the product was measured against — and the reason I spent as much energy arguing things *out* of the product as designing things into it.
+So the bar wasn't "more powerful than Excel." It was **easier than Excel**. That became the design principle the rest of the product was measured against, and the reason I spent as much energy arguing things *out* of the product as designing things into it.
 
 ---
 
