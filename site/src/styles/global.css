@@ -63,39 +63,8 @@ img {
   }
 }
 
-/* --- scaffold-only layout (replaced when the page is assembled) --- */
+/* Page container — sections manage their own full-bleed layout */
 .case-study {
-  padding: var(--gutter);
-}
-
-.section-kicker {
-  font-family: var(--font-body);
-  font-size: var(--fs-small);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 1rem;
-}
-
-.hero-title {
-  font-family: var(--font-display);
-  font-size: var(--fs-hero);
-  line-height: var(--lh-tight);
-  max-width: 18ch;
-}
-
-.hero-meta {
-  font-size: var(--fs-small);
-  color: var(--text-secondary);
-  margin-top: 1.5rem;
-  border-top: var(--rule);
-  padding-top: 0.75rem;
-}
-
-.scaffold-note {
-  margin-top: 4rem;
-  padding-top: 1rem;
-  border-top: var(--rule);
-  color: var(--text-secondary);
-  font-size: var(--fs-small);
+  width: 100%;
+  overflow-x: hidden;
 }
