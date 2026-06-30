@@ -3,12 +3,14 @@
   margin: 0;
   padding-left: clamp(1.25rem, 4vw, 2.5rem);
   border-left: 4px solid var(--accent);
-  max-width: 26ch;
 }
 
 .pull-quote__text {
   margin: 0;
-  max-width: none;
+  /* Measure lives here (not the blockquote) so `ch` is read against the quote
+     font — the line length scales with the type and wraps to a few even lines. */
+  max-width: 18ch;
+  text-wrap: balance;
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;

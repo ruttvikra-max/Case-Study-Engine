@@ -1,5 +1,6 @@
 import Hero from "./sections/Hero.jsx";
 import Opportunity from "./sections/Opportunity.jsx";
+import BeyondFeatures from "./sections/BeyondFeatures.jsx";
 
 /**
  * Case study page.
@@ -10,6 +11,7 @@ export default function App() {
     <main className="case-study">
       <Hero />
       <Opportunity />
+      <BeyondFeatures />
     </main>
   );
 }

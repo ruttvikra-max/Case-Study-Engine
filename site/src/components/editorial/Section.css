@@ -1,7 +1,10 @@
 .section {
   position: relative;
   background: var(--surface);
-  padding-block: var(--space-section);
+  /* Top padding only — the gap between sections is a single interval
+     (the next section's top padding), not doubled top+bottom. Hero manages
+     its own spacing and is unaffected. */
+  padding-block: var(--space-section) 0;
 }
 
 .section--dark {
