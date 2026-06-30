@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from "motion/react";
 import "./PullQuote.css";
 
 /**
- * PullQuote — the editorial centerpiece moment (italic Hecate, red spine).
+ * PullQuote — the editorial centerpiece moment (italic display serif, red spine).
  * Used for "Why are users still relying on Excel?". Renders as a <blockquote>;
  * fades up on view, static under reduced motion.
  *

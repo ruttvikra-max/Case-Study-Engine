@@ -3,7 +3,7 @@
   padding-bottom: var(--space-section);
 }
 
-/* The closing mic-drop — large italic Hecate, the final spine accent on "product". */
+/* The closing mic-drop: large italic display serif, the final spine accent on "product". */
 .reflection__close {
   margin: var(--space-block) 0 0;
   max-width: 26ch;

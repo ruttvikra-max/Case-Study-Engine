@@ -1,35 +1,24 @@
-/* @font-face — paths relative to this file (src/styles/) into src/assets/fonts/ */
+/* @font-face — paths relative to this file (src/styles/) into src/assets/fonts/.
+   Both families are self-hosted and free under the SIL Open Font License. */
 
+/* Display — Playfair Display (variable). Headlines, oversized stat numbers,
+   and the italic pull-quotes. */
 @font-face {
-  font-family: "Hecate Display";
-  src: url("../assets/fonts/Hecate Display-Regular.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: "Hecate Display";
-  src: url("../assets/fonts/Hecate Display-Italic.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 900;
   font-style: italic;
   font-display: swap;
 }
 
-/* 001 Sans Serif — DEMO license, and the demo lacks digits + punctuation
-   (renders them as a blank box), so it can't carry this content.
-   Kept only for the eventual revert to a fully-licensed copy. */
-@font-face {
-  font-family: "001 Sans Serif";
-  src: url("../assets/fonts/001SansSerif DEMO-SVG.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* TEMPORARY DEV SUBSTITUTION — self-hosted so it loads on any network
-   (no CDN dependency). Hanken Grotesk variable, latin subset, weights 400–700.
-   See tokens.css --font-body for how to revert to 001 Sans Serif. */
+/* Body — Hanken Grotesk (variable, latin subset). Body, labels, UI. */
 @font-face {
   font-family: "Hanken Grotesk";
   src: url("../assets/fonts/HankenGrotesk-Variable-latin.woff2") format("woff2");
