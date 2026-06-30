@@ -2,6 +2,7 @@ import Hero from "./sections/Hero.jsx";
 import Opportunity from "./sections/Opportunity.jsx";
 import BeyondFeatures from "./sections/BeyondFeatures.jsx";
 import CoreExperience from "./sections/CoreExperience.jsx";
+import EnterpriseScale from "./sections/EnterpriseScale.jsx";
 
 /**
  * Case study page.
@@ -14,6 +15,7 @@ export default function App() {
       <Opportunity />
       <BeyondFeatures />
       <CoreExperience />
+      <EnterpriseScale />
     </main>
   );
 }
