@@ -3,6 +3,7 @@ import Opportunity from "./sections/Opportunity.jsx";
 import BeyondFeatures from "./sections/BeyondFeatures.jsx";
 import CoreExperience from "./sections/CoreExperience.jsx";
 import EnterpriseScale from "./sections/EnterpriseScale.jsx";
+import BeyondDesign from "./sections/BeyondDesign.jsx";
 
 /**
  * Case study page.
@@ -16,6 +17,7 @@ export default function App() {
       <BeyondFeatures />
       <CoreExperience />
       <EnterpriseScale />
+      <BeyondDesign />
     </main>
   );
 }
