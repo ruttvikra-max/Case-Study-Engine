@@ -29,8 +29,8 @@ export default function Opportunity() {
       <Prose
         lead
         paragraphs={[
-          "Healthcare organizations run on rules. Eligibility, provider-data quality, billing accuracy, network participation, state-by-state Medicaid and CMS compliance — all of it is encoded as logic. A single client's rule library can exceed 110,000 rules, and every one of them touches whether a patient gets access, whether a claim is correct, whether an audit passes.",
-          "Authoring a rule required engineering syntax, so the people who understood the rules — business analysts with deep domain knowledge — couldn't touch them. Every change, even a trivial one, routed through a specialized Business Rules Unit. That dependency had a price the business could measure.",
+          "Healthcare organizations run on rules. Eligibility, provider-data quality, billing accuracy, network participation, state-by-state Medicaid and CMS compliance: all of it is encoded as logic. A single client's rule library can exceed 110,000 rules, and every one of them touches whether a patient gets access, whether a claim is correct, whether an audit passes.",
+          "Authoring a rule required engineering syntax, so the people who understood the rules, business analysts with deep domain knowledge, couldn't touch them. Every change, even a trivial one, routed through a specialized Business Rules Unit. That dependency had a price the business could measure.",
         ]}
       />
 
@@ -44,7 +44,7 @@ export default function Opportunity() {
 
       <Prose
         paragraphs={[
-          "This wasn't a request for a nicer internal tool. It was an operational liability. The goal was to let operations teams configure rules independently — cutting the engineering dependency while improving governance, scalability, and the confidence clients had in the system.",
+          "This wasn't a request for a nicer internal tool. It was an operational liability. The goal was to let operations teams configure rules independently, cutting the engineering dependency while improving governance, scalability, and the confidence clients had in the system.",
         ]}
       />
     </Section>

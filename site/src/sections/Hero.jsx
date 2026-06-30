@@ -13,7 +13,7 @@ import "./Hero.css";
 const META = [
   {
     label: "Role",
-    value: "Lead Product Designer — discovery through high-fidelity, plus product strategy",
+    value: "Lead Product Designer: discovery through high-fidelity, plus product strategy",
   },
   { label: "Timeline", value: "6 months – in development" },
   { label: "Team", value: "Product Manager – Engineers – Data Scientist – Designer (me)" },
@@ -54,7 +54,7 @@ export default function Hero() {
             className="hero__line hero__line--lead"
           />
           <BlurText
-            text="We set out to make it three days — and put the work back in their hands."
+            text="We set out to make it three days, and put the work back in their hands."
             animateBy="words"
             delay={40}
             className="hero__line hero__line--turn"

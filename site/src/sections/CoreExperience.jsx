@@ -22,9 +22,9 @@ const WORKFLOWS = [
     challenge:
       "Rule syntax was the wall between domain experts and their own logic. Even “simple” rules needed a technical translator.",
     decision:
-      "We made natural language the front door. An analyst types what they mean, and the engine translates that intent into executable, structured logic. The technical layer stays — we just stopped making the analyst speak it.",
+      "We made natural language the front door. An analyst types what they mean, and the engine translates that intent into executable, structured logic. The technical layer stays. We just stopped making the analyst speak it.",
     outcome:
-      "The person who understands the rule can now write the rule. The translation step — and the ticket it used to require — disappears.",
+      "The person who understands the rule can now write the rule. The translation step (and the ticket it used to require) disappears.",
     caption: "Conversational rule authoring: natural-language prompt → generated structured rule",
   },
   {
@@ -42,20 +42,20 @@ const WORKFLOWS = [
     num: "03",
     title: "Two views of the same truth",
     challenge:
-      "A rule has to be reviewed by people with very different fluency — analysts comfortable with logic, and business stakeholders who are not.",
+      "A rule has to be reviewed by people with very different fluency: analysts comfortable with logic, and business stakeholders who are not.",
     decision:
       "Every rule renders two synchronized ways: a structured text view with the precise conditions, and a visual flow view that reads as a sequence anyone can follow. Same rule, same source of truth, two doors in.",
     outcome:
-      "Technical and non-technical reviewers validate the same logic before anything ships — fewer misreads, faster sign-off, shared understanding.",
+      "Technical and non-technical reviewers validate the same logic before anything ships: fewer misreads, faster sign-off, shared understanding.",
     caption: "Dual view: structured logic on one side, flow diagram on the other",
   },
   {
     num: "04",
     title: "Trust before publish: validation & conflict detection",
     challenge:
-      "In a 110,000-rule library, a new rule can silently contradict an existing one. Catching that by hand was slow and risky — and undetected conflicts become compliance and billing failures.",
+      "In a 110,000-rule library, a new rule can silently contradict an existing one. Catching that by hand was slow and risky, and undetected conflicts become compliance and billing failures.",
     decision:
-      "Validation and conflict detection run inline, as the analyst works, with feedback in plain language before publish — not in a separate review cycle weeks later.",
+      "Validation and conflict detection run inline, as the analyst works, with feedback in plain language before publish, not in a separate review cycle weeks later.",
     outcome:
       "Confidence moves to the moment of authoring. Errors are caught where they’re cheapest to fix, and the analyst publishes knowing the rule holds.",
     caption: "Inline validation + conflict warning surfaced during authoring",
@@ -64,7 +64,7 @@ const WORKFLOWS = [
     num: "05",
     title: "Find, reuse, and change at scale",
     challenge:
-      "Tens of thousands of rules are useless if you can’t find the one you need — and pointless to edit one at a time.",
+      "Tens of thousands of rules are useless if you can’t find the one you need, and pointless to edit one at a time.",
     decision:
       "Search, filters, and tags make the library navigable; duplication and bulk editing let analysts reuse and update many rules safely in one pass, with the same validation guarding the batch.",
     outcome:
@@ -92,7 +92,7 @@ export default function CoreExperience() {
       <Prose
         lead
         paragraphs={[
-          "The product is large — a rule builder, a library, validation, testing, version history, audit trails, dependencies, search, tags, citations, bulk editing, an AI assistant, draft mode, permissions, preview, and a visual flow view. Listing them explains nothing. What matters is how they collapse into a few workflows an analyst actually moves through.",
+          "The product is large: a rule builder, a library, validation, testing, version history, audit trails, dependencies, search, tags, citations, bulk editing, an AI assistant, draft mode, permissions, preview, and a visual flow view. Listing them explains nothing. What matters is how they collapse into a few workflows an analyst actually moves through.",
         ]}
       />
 

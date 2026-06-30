@@ -14,12 +14,12 @@ const CONTROLS = [
   {
     name: "Permissions",
     summary:
-      "Who can draft, who can publish, and who can only view — so autonomy never undercuts governance.",
+      "Who can draft, who can publish, and who can only view, so autonomy never undercuts governance.",
   },
   {
     name: "Version history & audit trails",
     summary:
-      "What changed, when, and by whom — non-negotiable when an auditor or a regulator asks the system to account for itself.",
+      "What changed, when, and by whom. Non-negotiable when an auditor or a regulator asks the system to account for itself.",
   },
   {
     name: "Rule dependencies",
@@ -32,7 +32,7 @@ const CONTROLS = [
   {
     name: "Source citation",
     summary:
-      "Ties a rule back to the regulation or policy that justifies it — compliance built in rather than reconstructed later.",
+      "Ties a rule back to the regulation or policy that justifies it: compliance built in rather than reconstructed later.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function EnterpriseScale() {
       <Prose
         lead
         paragraphs={[
-          "Approachability was the goal; it couldn’t come at the cost of the controls healthcare requires. The harder design work was making power quiet — present when needed, invisible when not.",
+          "Approachability was the goal; it couldn’t come at the cost of the controls healthcare requires. The harder design work was making power quiet: present when needed, invisible when not.",
         ]}
       />
 
@@ -63,7 +63,7 @@ export default function EnterpriseScale() {
       <Prose
         className="enterprise-scale__close"
         paragraphs={[
-          "None of these are features an analyst asks for by name. They’re the reasons a healthcare client will trust the tool with 110,000 live rules — and the reason the simpler front end is safe to offer at all.",
+          "None of these are features an analyst asks for by name. They’re the reasons a healthcare client will trust the tool with 110,000 live rules, and the reason the simpler front end is safe to offer at all.",
         ]}
       />
     </Section>
