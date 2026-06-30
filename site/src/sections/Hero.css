@@ -155,28 +155,20 @@
   max-width: none;
 }
 
-@media (max-width: 760px) {
-  .meta-strip {
-    grid-template-columns: 1fr 1fr;
-  }
-  .meta-strip__item {
-    border-bottom: var(--rule);
-  }
-  /* Left column of each row flush to the gutter; right column inset. */
-  .meta-strip__item:nth-child(2n + 1) {
-    padding-left: 0;
-  }
-  .meta-strip__item:nth-child(2n) {
-    padding-left: 1.25rem;
-    border-right: none;
-  }
-}
-@media (max-width: 460px) {
+/* Below the single-row width, stack into one flush-left column so every item
+   shares the same left edge. The grouped inset padding applies only when all
+   four sit on one line (above). */
+@media (max-width: 860px) {
   .meta-strip {
     grid-template-columns: 1fr;
   }
   .meta-strip__item {
-    border-right: none;
     padding-left: 0;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: var(--rule);
+  }
+  .meta-strip__item:last-child {
+    border-bottom: none;
   }
 }
