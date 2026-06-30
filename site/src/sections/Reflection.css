@@ -1,0 +1,20 @@
+/* Last section — add the page-end spacer the others omit (top-only padding). */
+.section.reflection {
+  padding-bottom: var(--space-section);
+}
+
+/* The closing mic-drop — large italic Hecate, the final spine accent on "product". */
+.reflection__close {
+  margin: var(--space-block) 0 0;
+  max-width: 26ch;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.08;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.reflection__accent {
+  color: var(--accent);
+}

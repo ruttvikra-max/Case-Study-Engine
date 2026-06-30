@@ -5,6 +5,7 @@ import CoreExperience from "./sections/CoreExperience.jsx";
 import EnterpriseScale from "./sections/EnterpriseScale.jsx";
 import BeyondDesign from "./sections/BeyondDesign.jsx";
 import Impact from "./sections/Impact.jsx";
+import Reflection from "./sections/Reflection.jsx";
 
 /**
  * Case study page.
@@ -20,6 +21,7 @@ export default function App() {
       <EnterpriseScale />
       <BeyondDesign />
       <Impact />
+      <Reflection />
     </main>
   );
 }
