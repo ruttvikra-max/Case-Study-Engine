@@ -1,0 +1,10 @@
+/* §3 is the conceptual heart — give the quote room to breathe. */
+.beyond-features__quote {
+  margin-block: clamp(3rem, 8vh, 6rem);
+}
+
+/* Scale the centerpiece quote up beyond the default PullQuote size. */
+.beyond-features .pull-quote__text {
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 1.04;
+}

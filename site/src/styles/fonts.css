@@ -16,11 +16,24 @@
   font-display: swap;
 }
 
-/* 001 Sans Serif — DEMO license. Confirm full license before public deploy. */
+/* 001 Sans Serif — DEMO license, and the demo lacks digits + punctuation
+   (renders them as a blank box), so it can't carry this content.
+   Kept only for the eventual revert to a fully-licensed copy. */
 @font-face {
   font-family: "001 Sans Serif";
   src: url("../assets/fonts/001SansSerif DEMO-SVG.otf") format("opentype");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TEMPORARY DEV SUBSTITUTION — self-hosted so it loads on any network
+   (no CDN dependency). Hanken Grotesk variable, latin subset, weights 400–700.
+   See tokens.css --font-body for how to revert to 001 Sans Serif. */
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/HankenGrotesk-Variable-latin.woff2") format("woff2");
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }

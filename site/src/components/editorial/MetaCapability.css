@@ -1,0 +1,29 @@
+.meta-capability {
+  padding: clamp(1.25rem, 2.5vw, 1.75rem) 0 0;
+  border-top: var(--rule-strong);
+}
+
+.meta-capability__mark {
+  display: block;
+  width: 2rem;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.meta-capability__name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  color: var(--text-primary);
+  margin-bottom: 0.625rem;
+}
+
+.meta-capability__summary {
+  margin: 0;
+  max-width: 38ch;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}

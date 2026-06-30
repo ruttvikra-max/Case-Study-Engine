@@ -1,0 +1,53 @@
+.section-header {
+  margin-bottom: var(--space-block);
+}
+
+.section-header__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: var(--rule-strong);
+  padding-bottom: 0.75rem;
+  margin-bottom: clamp(1.5rem, 4vh, 2.75rem);
+}
+
+/* .kicker is defined globally by the Hero; restated here so sections
+   render correctly regardless of import order. */
+.section-header .kicker {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-ink); /* AA on cream for small text */
+}
+
+.section-header__index {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.section-header__index-sep {
+  color: var(--accent-ink);
+  margin-inline: 0.1em;
+}
+
+/* Slab headline (the section h2) — balanced wrapping evens the lines so the
+   block doesn't trail off with a short orphan line and ragged whitespace. */
+.section-header__lead {
+  margin: 0;
+  /* No fixed character cap — the headline fills the content column and
+     re-wraps with the viewport. Balanced wrapping keeps the lines even. */
+  max-width: none;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  color: var(--text-primary);
+  text-wrap: balance;
+  will-change: transform, opacity, filter;
+}

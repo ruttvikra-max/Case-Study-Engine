@@ -1,0 +1,26 @@
+.section {
+  position: relative;
+  background: var(--surface);
+  /* Top padding only — the gap between sections is a single interval
+     (the next section's top padding), not doubled top+bottom. Hero manages
+     its own spacing and is unaffected. */
+  padding-block: var(--space-section) 0;
+}
+
+.section--dark {
+  background: var(--color-neutral-dark);
+  color: var(--color-bg);
+}
+.section--dark .kicker,
+.section--dark .section-header__index {
+  color: var(--color-bg);
+}
+
+.section__inner {
+  width: min(100%, var(--maxw));
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+.section__inner--wide {
+  width: 100%;
+}

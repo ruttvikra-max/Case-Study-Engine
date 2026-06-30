@@ -1,0 +1,32 @@
+.opportunity__stats {
+  list-style: none;
+  margin: var(--space-block) 0;
+  padding: 0;
+  display: grid;
+  /* 2×2 so the numerals can be genuinely oversized and scale with the screen.
+     minmax(0,1fr) lets tracks shrink below the (unbreakable) number width,
+     so the numbers never blow out the grid. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem);
+  border-top: var(--rule-strong);
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+.opportunity__stats > li {
+  min-width: 0;
+}
+
+/* Numerals scale fluidly with the viewport — large on big screens, never clipped */
+.opportunity__stats .stat-block__value {
+  font-size: clamp(2.75rem, 7vw, 6rem);
+  white-space: nowrap;
+}
+
+/* Single column on phones — numerals can breathe full-width */
+@media (max-width: 480px) {
+  .opportunity__stats {
+    grid-template-columns: 1fr;
+  }
+  .opportunity__stats .stat-block__value {
+    font-size: clamp(3rem, 16vw, 4.5rem);
+  }
+}

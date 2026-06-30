@@ -1,0 +1,31 @@
+.pull-quote {
+  position: relative;
+  margin: 0;
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  border-left: 4px solid var(--accent);
+}
+
+.pull-quote__text {
+  margin: 0;
+  /* Measure lives here (not the blockquote) so `ch` is read against the quote
+     font — the line length scales with the type and wraps to a few even lines. */
+  max-width: 18ch;
+  text-wrap: balance;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-quote);
+  line-height: 1.08;
+  color: var(--accent);
+}
+
+.pull-quote__cite {
+  display: block;
+  margin-top: 1.25rem;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  max-width: 40ch;
+}

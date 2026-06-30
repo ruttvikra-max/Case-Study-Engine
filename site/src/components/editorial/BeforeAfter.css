@@ -1,0 +1,102 @@
+.before-after {
+  border-top: var(--rule-strong);
+}
+
+.before-after__legend {
+  display: flex;
+  gap: 1.75rem;
+  padding: 1rem 0 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.ba-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+.ba-key::before {
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 2px;
+}
+.ba-key--before::before { background: var(--viz-before); }
+.ba-key--after::before  { background: var(--viz-after); }
+
+.before-after__rows {
+  margin: 0;
+}
+
+.ba-row {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+  border-bottom: var(--rule-hair);
+}
+.ba-row__label {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.875rem;
+}
+
+.ba-row__data {
+  margin: 0;
+}
+
+.ba-vals {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.ba-val {
+  font-family: var(--font-display);
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+/* Numbers stay high-contrast (AA); blue/amber coding lives in bars + legend */
+.ba-val--before {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  color: var(--text-secondary);
+}
+.ba-val--after {
+  font-size: var(--fs-stat);
+  color: var(--text-primary);
+}
+.ba-arrow {
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--accent-ink);
+}
+
+/* Proportional bars — the actual data viz.
+   The "after" bar animates via scaleX (transform only — no layout). */
+.ba-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 640px;
+}
+.ba-bar-track {
+  width: 100%;
+}
+.ba-bar {
+  height: 0.625rem;
+  border-radius: 2px;
+  width: 100%;
+}
+.ba-bar--before {
+  background: var(--viz-before);
+}
+.ba-bar--after {
+  background: var(--viz-after);
+  transform-origin: left center;
+  will-change: transform;
+}
