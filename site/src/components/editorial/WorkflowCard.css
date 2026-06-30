@@ -1,7 +1,9 @@
 .workflow-card {
   background: var(--surface);
-  border: var(--rule-strong);
-  padding: clamp(1.5rem, 4vw, 2.75rem);
+  /* Top-rule editorial block (not a boxed card) — reads cleaner when five
+     stack in sequence, and matches the section's rule-based system. */
+  border-top: var(--rule-strong);
+  padding-top: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
 .workflow-card__head {

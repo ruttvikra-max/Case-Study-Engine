@@ -1,0 +1,38 @@
+.core-experience__stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 6vh, 5rem);
+  margin-top: var(--space-block);
+}
+
+.core-experience__item {
+  will-change: transform, opacity;
+}
+
+/* Workflow 1 — the natural-language prompt demo (TextType) above the screenshot */
+.rule-prompt {
+  margin-bottom: 0.25rem;
+}
+.rule-prompt__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+.rule-prompt__field {
+  border: var(--rule-hair);
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.45);
+  padding: 0.875rem 1rem;
+  min-height: 3.25rem;
+}
+.rule-prompt__text {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-primary);
+}
