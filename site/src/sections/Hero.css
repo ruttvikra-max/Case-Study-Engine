@@ -44,7 +44,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-ink); /* AA on cream for small text */
 }
 
 /* Constructivist barcode strip */
@@ -62,10 +62,10 @@
   );
 }
 
-/* Headline */
+/* Headline — fills the content column so it doesn't leave a ragged right gutter */
 .hero__headline {
   margin: 0 0 clamp(2rem, 6vh, 3.5rem);
-  max-width: 20ch;
+  max-width: none;
 }
 .hero__line {
   display: block;
@@ -127,8 +127,13 @@
   border-top: var(--rule);
 }
 .meta-strip__item {
-  padding: 1rem 1.25rem 1rem 0;
+  padding: 1rem 1.25rem;
   border-right: var(--rule);
+}
+/* First column sits flush with the gutter so it aligns to the headline;
+   inner columns get symmetric padding so they read as grouped units. */
+.meta-strip__item:first-child {
+  padding-left: 0;
 }
 .meta-strip__item:last-child {
   border-right: none;
@@ -139,7 +144,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-ink); /* AA on cream for small text */
   margin-bottom: 0.5rem;
 }
 .meta-strip__value {
@@ -156,9 +161,13 @@
   }
   .meta-strip__item {
     border-bottom: var(--rule);
-    padding-right: 1rem;
+  }
+  /* Left column of each row flush to the gutter; right column inset. */
+  .meta-strip__item:nth-child(2n + 1) {
+    padding-left: 0;
   }
   .meta-strip__item:nth-child(2n) {
+    padding-left: 1.25rem;
     border-right: none;
   }
 }
@@ -168,5 +177,6 @@
   }
   .meta-strip__item {
     border-right: none;
+    padding-left: 0;
   }
 }

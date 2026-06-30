@@ -15,8 +15,8 @@ const META = [
     label: "Role",
     value: "Lead Product Designer — discovery through high-fidelity, plus product strategy",
   },
-  { label: "Timeline", value: "6 months · in development" },
-  { label: "Team", value: "Product Manager · Engineers · Data Scientist · Designer (me)" },
+  { label: "Timeline", value: "6 months – in development" },
+  { label: "Team", value: "Product Manager – Engineers – Data Scientist – Designer (me)" },
   {
     label: "Ownership",
     value: "Owned the end-to-end experience and shaped what we built, and in what order",

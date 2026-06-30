@@ -1,0 +1,23 @@
+.section {
+  position: relative;
+  background: var(--surface);
+  padding-block: var(--space-section);
+}
+
+.section--dark {
+  background: var(--color-neutral-dark);
+  color: var(--color-bg);
+}
+.section--dark .kicker,
+.section--dark .section-header__index {
+  color: var(--color-bg);
+}
+
+.section__inner {
+  width: min(100%, var(--maxw));
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+.section__inner--wide {
+  width: 100%;
+}

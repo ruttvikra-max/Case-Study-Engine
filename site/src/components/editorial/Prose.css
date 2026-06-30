@@ -1,0 +1,30 @@
+.prose p {
+  /* Fills the content column (matches the headline width) rather than the
+     narrow reading measure, per the full-width editorial direction. */
+  max-width: none;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text-primary);
+}
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Strong inline emphasis stays restrained — weight, not color */
+.prose strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+/* The single red accent, used sparingly for the spine phrase */
+.prose .accent {
+  color: var(--accent-ink); /* AA on cream for body-size text */
+  font-style: normal;
+}
+
+/* Lead paragraph — a subtle step up from body (deliberate entry point,
+   not a jarring mismatch): ~19–20px vs the 18px body. */
+.prose--lead p:first-child {
+  font-size: clamp(1.1875rem, 1.4vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--text-primary);
+}

@@ -25,12 +25,21 @@
   --text-secondary: var(--color-neutral-mid);
   --text-muted:     var(--color-neutral-light);
   --accent:         var(--color-primary-red);
+  /* AA-safe red for SMALL text on cream (#DB3A34 is only ~4.28:1).
+     Use --accent for fills, rules, and large display type (≥3:1 needs). */
+  --accent-ink:     #D0332C;   /* ~4.77:1 on --color-bg */
   --link:           var(--color-secondary-blue);
   --surface:        var(--color-bg);
 
   /* Typography */
   --font-display: "Hecate Display", Georgia, serif;        /* PRIMARY */
-  --font-body:    "001 Sans Serif", system-ui, sans-serif; /* SECONDARY */
+  /* SECONDARY — TEMPORARY DEV SUBSTITUTION.
+     The bundled "001 Sans Serif" is a DEMO that lacks digits + punctuation
+     (every number renders as a blank box), so it can't carry this content.
+     Hanken Grotesk (license-free, loaded in index.html) stands in for now.
+     TO REVERT: drop the fully-licensed 001 Sans Serif .otf into assets/fonts/
+     and set this back to: "001 Sans Serif", system-ui, sans-serif */
+  --font-body:    "Hanken Grotesk", system-ui, sans-serif;
 
   /* Type scale (editorial) */
   --fs-hero:   clamp(3rem, 8vw, 7rem);
@@ -39,6 +48,11 @@
   --fs-h3:     1.5rem;
   --fs-body:   1.125rem;
   --fs-small:  0.9375rem;
+  --fs-label:  0.75rem;     /* uppercase meta labels */
+
+  /* Oversized display numerals + pull-quotes */
+  --fs-stat:  clamp(3.5rem, 11vw, 8.5rem);
+  --fs-quote: clamp(2rem, 6vw, 4.25rem);
 
   --lh-tight: 1.05;
   --lh-snug:  1.2;
@@ -47,5 +61,22 @@
   /* Layout */
   --measure: 68ch;          /* readable line length */
   --gutter:  clamp(1.25rem, 5vw, 4rem);
+  --maxw:    1200px;        /* content column max — matches hero */
   --rule:    1px solid var(--color-neutral-dark);
+  --rule-strong: 2px solid var(--text-primary);
+  --rule-hair:   1px solid var(--color-neutral-light);
+
+  /* Vertical rhythm */
+  --space-section: clamp(4.5rem, 13vh, 9rem);  /* section block padding */
+  --space-block:   clamp(2rem, 6vh, 4rem);     /* gap between blocks in a section */
+
+  /* Data-viz only (Impact section) — not for decoration */
+  --viz-before: var(--color-secondary-blue);
+  --viz-after:  var(--color-primary-orange);
+
+  /* Motion — strong custom curves (built-in CSS easings lack punch).
+     Content reveals are seen once, so durations run a touch longer than UI. */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-reveal:  0.6s;
 }
