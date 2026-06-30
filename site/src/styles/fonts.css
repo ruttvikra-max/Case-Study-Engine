@@ -5,14 +5,14 @@
    and the italic pull-quotes. */
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/PlayfairDisplay-Variable-latin.woff2") format("woff2");
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/PlayfairDisplay-Italic-Variable-latin.woff2") format("woff2");
   font-weight: 400 900;
   font-style: italic;
   font-display: swap;
