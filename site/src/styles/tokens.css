@@ -70,9 +70,10 @@
   --space-section: clamp(4.5rem, 13vh, 9rem);  /* section block padding */
   --space-block:   clamp(2rem, 6vh, 4rem);     /* gap between blocks in a section */
 
-  /* Data-viz only (Impact section) — not for decoration */
-  --viz-before: var(--color-secondary-blue);
-  --viz-after:  var(--color-primary-orange);
+  /* Data-viz (Impact section) — kept on the editorial spine for cohesion:
+     muted slate = the old/manual state, brand red = the improved state. */
+  --viz-before: var(--color-neutral-mid);
+  --viz-after:  var(--color-primary-red);
 
   /* Motion — strong custom curves (built-in CSS easings lack punch).
      Content reveals are seen once, so durations run a touch longer than UI. */
