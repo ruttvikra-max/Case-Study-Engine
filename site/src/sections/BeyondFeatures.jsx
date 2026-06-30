@@ -23,6 +23,13 @@ export default function BeyondFeatures() {
         lead
         paragraphs={[
           "When we started, the conversation in the room was about capability. What advanced logic could we support? How many rule types, how many operators, how much power?",
+          <>
+            And it wasn't for lack of tools. Purpose-built rule engines already existed —{" "}
+            <strong>visual builders, AI-assisted decision tables, role-based review flows</strong> —
+            but they competed on power, assumed a technical user in the loop, and weren't built for
+            healthcare's domain or its conflict-heavy libraries. Analysts routed around all of them,
+            back to Excel. That was the tell: more power wasn't the gap.
+          </>,
           'I pushed in a different direction. Instead of asking "What more can we build?", I kept asking one question:',
         ]}
       />
