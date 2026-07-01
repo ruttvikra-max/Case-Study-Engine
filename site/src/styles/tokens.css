@@ -31,15 +31,9 @@
   --link:           var(--color-secondary-blue);
   --surface:        var(--color-bg);
 
-  /* Typography */
-  --font-display: "Hecate Display", Georgia, serif;        /* PRIMARY */
-  /* SECONDARY — TEMPORARY DEV SUBSTITUTION.
-     The bundled "001 Sans Serif" is a DEMO that lacks digits + punctuation
-     (every number renders as a blank box), so it can't carry this content.
-     Hanken Grotesk (license-free, loaded in index.html) stands in for now.
-     TO REVERT: drop the fully-licensed 001 Sans Serif .otf into assets/fonts/
-     and set this back to: "001 Sans Serif", system-ui, sans-serif */
-  --font-body:    "Hanken Grotesk", system-ui, sans-serif;
+  /* Typography — both self-hosted, free under the SIL Open Font License */
+  --font-display: "Playfair Display", Georgia, serif;       /* PRIMARY */
+  --font-body:    "Hanken Grotesk", system-ui, sans-serif;  /* SECONDARY */
 
   /* Type scale (editorial) */
   --fs-hero:   clamp(3rem, 8vw, 7rem);

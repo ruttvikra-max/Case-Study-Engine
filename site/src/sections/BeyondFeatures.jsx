@@ -24,8 +24,8 @@ export default function BeyondFeatures() {
         paragraphs={[
           "When we started, the conversation in the room was about capability. What advanced logic could we support? How many rule types, how many operators, how much power?",
           <>
-            And it wasn't for lack of tools. Purpose-built rule engines already existed —{" "}
-            <strong>visual builders, AI-assisted decision tables, role-based review flows</strong> —
+            And it wasn't for lack of tools. Purpose-built rule engines already existed (
+            <strong>visual builders, AI-assisted decision tables, role-based review flows</strong>),
             but they competed on power, assumed a technical user in the loop, and weren't built for
             healthcare's domain or its conflict-heavy libraries. Analysts routed around all of them,
             back to Excel. That was the tell: more power wasn't the gap.
@@ -40,11 +40,11 @@ export default function BeyondFeatures() {
 
       <Prose
         paragraphs={[
-          "The answer reframed the whole project. Analysts weren't reaching for Excel because it was powerful. They reached for it because it was theirs — familiar, fast, and forgiving. They didn't want more functionality than the rule engine could already offer. They wanted confidence. They wanted to make a change and trust the result without filing a ticket and waiting.",
+          "The answer reframed the whole project. Analysts weren't reaching for Excel because it was powerful. They reached for it because it was theirs: familiar, fast, and forgiving. They didn't want more functionality than the rule engine could already offer. They wanted confidence. They wanted to make a change and trust the result without filing a ticket and waiting.",
           <>
             So the bar wasn't "more powerful than Excel." It was{" "}
             <span className="accent">easier than Excel</span>. That became the design principle the
-            rest of the product was measured against — and the reason I spent as much energy arguing
+            rest of the product was measured against, and the reason I spent as much energy arguing
             things <em>out</em> of the product as designing things into it.
           </>,
         ]}

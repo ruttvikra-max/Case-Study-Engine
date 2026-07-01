@@ -28,8 +28,8 @@ export default function Reflection() {
       <Prose
         lead
         paragraphs={[
-          "This project changed how I think about enterprise software. The instinct in complex domains is to meet complexity with more — more capability, more options, more power. The work that mattered here was the opposite: understanding why people still trusted a spreadsheet over a purpose-built system, and designing for that trust instead of designing past it.",
-          "The best thing we built wasn’t a feature. It was the confidence to let a non-engineer change a rule that affects a hundred thousand others — and be right.",
+          "This project changed how I think about enterprise software. The instinct in complex domains is to meet complexity with more: more capability, more options, more power. The work that mattered here was the opposite: understanding why people still trusted a spreadsheet over a purpose-built system, and designing for that trust instead of designing past it.",
+          "The best thing we built wasn’t a feature. It was the confidence to let a non-engineer change a rule that affects a hundred thousand others, and be right.",
         ]}
       />
 

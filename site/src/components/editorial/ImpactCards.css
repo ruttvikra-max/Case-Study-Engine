@@ -19,6 +19,10 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-secondary);
+  line-height: 1.3;
+  /* Reserve two lines so the figure/values start at the same height across
+     cards even when a longer label wraps. */
+  min-height: 2.6em;
 }
 
 .impact-card__drop {
@@ -50,9 +54,10 @@
   color: var(--text-primary);
 }
 
-/* Mini editorial bar — ghosted track, bold red "after" segment */
+/* Mini editorial bar — ghosted track, bold red "after" segment.
+   margin-top: auto pins it to the bottom so all three bars align. */
 .impact-card__rail {
-  margin-top: 0.25rem;
+  margin-top: auto;
   height: 6px;
   background: rgba(70, 81, 103, 0.18);
   border-radius: 2px;
